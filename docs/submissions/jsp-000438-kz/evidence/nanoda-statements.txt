@@ -1,0 +1,37 @@
+theorem Erdos548.tree_free_edge_bound :
+  forall {U V : Type 0} [inst._@.Upstream548.320067352._hygCtx._hyg.4 : Fintype U]
+    [inst._@.Upstream548.320067352._hygCtx._hyg.7 : Fintype V] (T : SimpleGraph U),
+  SimpleGraph.IsTree T → LE.le (OfNat.ofNat 2) (Fintype.card U) → (forall (G : SimpleGraph V),
+  LT.lt (OfNat.ofNat 0) (Fintype.card V) → Not (SimpleGraph.IsContained T G) → LE.le
+    (HMul.hMul (OfNat.ofNat 2) (Set.ncard (SimpleGraph.edgeSet G)))
+    (HMul.hMul (HSub.hSub (Fintype.card U) (OfNat.ofNat 2)) (Fintype.card V))) :=
+  _
+
+theorem JSP000438.trees_monochromatic (m n : Nat) (hm : LE.le (OfNat.ofNat 2) m) (hn : LE.le (OfNat.ofNat 2) n)
+  (T : SimpleGraph (Fin m)) (S : SimpleGraph (Fin n)) (hT : SimpleGraph.IsTree T) (hS : SimpleGraph.IsTree S)
+  (G : SimpleGraph (Fin (HSub.hSub (HAdd.hAdd m n) (OfNat.ofNat 2)))) :
+  Or (SimpleGraph.IsContained T G) (SimpleGraph.IsContained S (Compl.compl G)) :=
+  _
+
+theorem JSP000438.tree_monochromatic (n : Nat) (hn : LE.le (OfNat.ofNat 2) n) (T : SimpleGraph (Fin n))
+  (hT : SimpleGraph.IsTree T) :
+  forall (G : SimpleGraph (Fin (HSub.hSub (HMul.hMul (OfNat.ofNat 2) n) (OfNat.ofNat 2)))),
+  Or (SimpleGraph.IsContained T G) (SimpleGraph.IsContained T (Compl.compl G)) :=
+  _
+
+theorem JSP000438.graphRamsey_trees (m n : Nat) (hm : LE.le (OfNat.ofNat 2) m) (hn : LE.le (OfNat.ofNat 2) n)
+  (T : SimpleGraph (Fin m)) (S : SimpleGraph (Fin n)) (hT : SimpleGraph.IsTree T) (hS : SimpleGraph.IsTree S) :
+  LE.le (SimpleGraph.graphRamsey T S) (HSub.hSub (HAdd.hAdd m n) (OfNat.ofNat 2)) :=
+  _
+
+theorem Erdos547.erdos_547 (n : Nat) (hn : LE.le (OfNat.ofNat 2) n) (T : SimpleGraph (Fin n))
+  (a._@._internal._hyg.0 : SimpleGraph.IsTree T) :
+  LE.le (SimpleGraph.diagonalGraphRamsey T) (HSub.hSub (HMul.hMul (OfNat.ofNat 2) n) (OfNat.ofNat 2)) :=
+  _
+
+axiom propext {a b : Prop} : Iff a b → Eq a b
+
+axiom Quot.sound.{u} {α : Sort u} {r : α → α → Prop} {a b : α} : r a b → Eq (Quot.mk r a) (Quot.mk r b)
+
+axiom Classical.choice.{u} {α : Sort u} : Nonempty α → α
+
