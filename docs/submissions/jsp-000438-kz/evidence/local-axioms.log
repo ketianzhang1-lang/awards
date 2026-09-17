@@ -1,0 +1,5 @@
+'Erdos548.tree_free_edge_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000438.trees_monochromatic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000438.tree_monochromatic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JSP000438.graphRamsey_trees' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos547.erdos_547' depends on axioms: [propext, Classical.choice, Quot.sound]

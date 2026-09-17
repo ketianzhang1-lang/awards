@@ -1,0 +1,19 @@
+{
+  "archive_download_url": "https://api.github.com/repos/ketianzhang1-lang/jsp-000301-lean/actions/artifacts/10478133208/zip",
+  "created_at": "2026-09-17T02:38:49Z",
+  "digest": "sha256:fb1405c9051fba1bfb217242478d0c96e79ba155ea9b98a804533929263f17df",
+  "expired": false,
+  "expires_at": "2026-12-16T02:35:57Z",
+  "id": 10478133208,
+  "name": "jsp-000438-evidence",
+  "size_in_bytes": 8112880,
+  "updated_at": "2026-09-17T02:38:49Z",
+  "url": "https://api.github.com/repos/ketianzhang1-lang/jsp-000301-lean/actions/artifacts/10478133208",
+  "workflow_run": {
+    "head_branch": "jsp-000438-tree-ramsey",
+    "head_repository_id": 1373404416,
+    "head_sha": "11a32e130fa669a4f23f0bbe7a320fd9675dbb7c",
+    "id": 35175029806,
+    "repository_id": 1373404416
+  }
+}
